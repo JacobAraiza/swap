@@ -1,0 +1,20 @@
+[package]
+name = "escrow"
+version = "0.0.1"
+edition = "2021"
+publish = false
+
+[dependencies]
+solana-program = "=1.10.33"
+anchor-lang = { version = "=0.25", features = ["init-if-needed"] }
+anchor-spl = "=0.25.0"
+
+[dev-dependencies]
+spl-associated-token-account = "=1.0.5"
+solana-program-test = "=1.10.33"
+solana-sdk = "=1.10.33"
+spl-token = "=3.3.0"
+rand = "=0.8.5"
+
+[lib]
+crate-type = ["cdylib", "lib"]
